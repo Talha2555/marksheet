@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 import inquirer from "inquirer";
 //asking for roll no
 let roll = await inquirer.prompt({
@@ -40,7 +41,7 @@ if (rollNo == 32233) {
     console.log(` your python marks = ${pyth} out of 100`);
     console.log(` your csharp marks = ${c_sharp} out of 100`);
     console.log(`Obtained marks = ${obtainedMarks} Total Marks = ${totalMarks}`);
-    console.log(`percentage = ${percent}`);
+    console.log(`percentage = ${percent}%`);
     if (percent >= 80) {
         console.log("Congratulations ! you got A++ Grade");
     }
